@@ -1,0 +1,26 @@
+<template>
+    <template for:each={creditcards} for:item="creditcard">
+        <lightning-card key={creditcard.Id} title="Credit card Info" icon-name="custom:custom14">
+            <ul class="slds-m-around_medium">
+                <li>
+                    Credit card Number : {creditcard.Credit_card_number_T__c}
+                </li>
+                <li>
+                    Type : {creditcard.Type__c}
+                </li>
+                <li>
+                    Balance : {creditcard.Balance__c}
+                </li>
+                <li>
+                    Issue Date : {creditcard.Issue_Date__c}
+                </li>
+                <li style="padding-top: 10px;">
+                    <lightning-button variant="brand" label="View Transactions" title="View Transactions"
+                        onclick={handelChangeEvent} data-id={creditcard.Credit_card_number_T__c}>
+                    </lightning-button>
+                </li>
+            </ul>
+        </lightning-card>
+    </template>
+    <c-account-transaction></c-account-transaction>
+</template>

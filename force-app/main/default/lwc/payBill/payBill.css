@@ -1,0 +1,14 @@
+.payBillContainer{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btnPay{
+    margin-top: 10px;
+}
+
+.custom-height{
+    height: 50%;
+    width: 40%;
+    max-width: 45rem;
+}
