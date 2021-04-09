@@ -1,0 +1,23 @@
+<template>
+    <template for:each={accounts} for:item="account">
+        <lightning-card key={account.Id} title="Fixed Diposit Info" icon-name="custom:custom14">
+            <ul class="slds-m-around_medium">
+                <li>
+                    Account Number : {account.Account_Number__c}
+                </li>
+                <li>
+                    Balance : {account.Balance__c}
+                </li>
+                <li>
+                    Interest Rate : {account.Interest_Rate__c}%
+                </li>
+                <li style="padding-top: 10px;">
+                    <lightning-button variant="brand" label="View Transactions" title="View Transactions"
+                        onclick={handelChangeEvent} data-id={account.Account_Number__c}>
+                    </lightning-button>
+                </li>
+            </ul>
+        </lightning-card>
+    </template>
+    <c-account-transaction></c-account-transaction>
+</template>

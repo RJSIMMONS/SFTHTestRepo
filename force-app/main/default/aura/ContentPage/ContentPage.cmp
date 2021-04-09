@@ -1,0 +1,34 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <div class="Content">
+        <div class="left-side" style="width:25%">
+            <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-nav-vertical__section">
+                    <h2 id="entity-header" class="slds-nav-vertical__title">Menu</h2>
+                    <ul aria-describedby="entity-header">
+                        <li class="slds-nav-vertical__item slds-is-active">
+                            <!--lightning:navigation aura:id="workspace"/>
+    						<lightning:button class="slds-nav-vertical__action" label="Account Information" onclick="{!c.openTab}" /-->
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Fixed Diposites</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Credit Cards</a>
+                        </li>
+                        <li class="slds-nav-vertical__item">
+                            <a href="#" class="slds-nav-vertical__action">Transactions</a>
+                        </li>  
+                        <li class="slds-nav-vertical__item">                            
+    						<lightning:button class="slds-nav-vertical__action" label="Logout" onclick="{!c.NavigatetoLoginPage}" />
+                        </li>  
+                    </ul>
+                </div>                
+            </nav>
+        </div>
+        <div class="right-side" style="width:50%">
+            <div class="">
+                <h1>BODY</h1>
+            </div>            
+        </div>
+    </div>    
+</aura:component>

@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId,lightning:isUrlAddressable">
+	<h1>Account Info here!</h1>
+</aura:component>

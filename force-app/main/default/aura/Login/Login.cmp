@@ -1,0 +1,25 @@
+<aura:component implements="force:appHostable" access="global" controller="LoginPage">
+    <aura:attribute name = "Empiduser" type = "String"/>
+    <aura:attribute name = "Empidpwd" type = "String"/>
+    <div class="slds-form-element slds-align_absolute-center slds-m-top_x-large">
+        <div class="slds-col slds-size_6-of-12">
+            <form>
+                <div class="slds-align_absolute-center slds-m-top_small slds-text-heading_large">
+                    <span>Login Page</span>
+                </div>
+                
+                <div class="slds-form-element__control">
+                    <lightning:input label="User Name" name="abc" id="username" placeholder="User Name" value="{!v.Empiduser}" />
+                </div>
+                
+                <div class="slds-form-element__control">
+                    <lightning:input label="Password" type="password" name="abc" id="password"  placeholder="Password" value="{!v.Empidpwd}" />
+                </div>
+                <div class="slds-align_absolute-center" style="height:4rem">
+                    <!--lightning:workspaceAPI aura:id="contentpage"/-->
+                    <lightning:button variant="success" label="Login" onclick="{!c.loginPage}"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</aura:component>
